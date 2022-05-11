@@ -1,6 +1,6 @@
 // Serviço responsavel apenas pela criação dos agendamentos.
-import Appointment from "../entities/appointment";
-import AppError from "../../../shared/errors/AppError";
+import Appointment from "../infra/typeorm/entities/appointment";
+import AppError from "@shared/errors/AppError";
 import { getCustomRepository } from "typeorm";
 import { startOfHour } from "date-fns";
 import AppointmentsRepository from "../repositories/AppointmentsRepository";
